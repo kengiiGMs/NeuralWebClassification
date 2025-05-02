@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maça e Laranja</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+        }
+
+        .laranja {
+            color: orange;
+        }
+
+        .maca {
+            color: red;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .form-body {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 392px;
+            height: 25px;
+        }
+
+        .btn {
+            width: 400px;
+            height: 30px;
+        }
+
+        .input-area {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Classificador de <span class="maca">Maças</span> e <span class="laranja">Laranjas</span></h1>
+    <h2>Insira as medidas abaixo e deixe o modelo prever a fruta</h2>
+    <hr>
+
+    <div class="container">
+
+        <form method="POST">
+            <div class="form-body">
+
+                <div class="input-area">
+                    <label for="peso">Peso (g):</label>
+                    <input type="text" name="peso" required>
+                </div>
+
+                <div class="input-area">
+                    <label for="tamanho">Tamanho (cm):</label>
+                    <input type="text" name="tamanho" required>
+                </div>
+
+                <input type="submit" value="Classificar" class="btn">
+            </div>
+        </form>
+
+    </div>
+</body>
+
+</html>
