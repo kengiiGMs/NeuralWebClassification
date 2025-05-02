@@ -4,7 +4,7 @@ import numpy as np
 
 app = Flask(__name__)
 
-model = joblib.load('model/mlpAppleAndOranges.pkl')
+model = joblib.load('model/mlpApplesAndOranges.pkl')
 scaler = joblib.load('model/scaler.pkl')
 
 @app.route("/", methods=["GET", "POST"])

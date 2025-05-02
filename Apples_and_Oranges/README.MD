@@ -1,4 +1,4 @@
-# Modelo de Rede Neural (Apple and Oranges 🍎🍊)
+# Modelo de Rede Neural (Apples and Oranges 🍎🍊)
 Foi desenvolvida uma página web capaz de ler as medidas de uma fruta e, por meio de um modelo de rede neural previamente treinado, classificar se a fruta é uma laranja ou uma maçã.
 
 ## Tecnologias usadas
